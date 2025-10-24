@@ -50,22 +50,19 @@ let totale= 0;
 
 for(let i = 0; i < prices.length; i++) {
   totale = totale + prices[i];
-  console.log(totale);
+  
 }
-
+//console.log(totale);
 
 if (utenteCheEffettuaLAcquisto.isAmbassador){
   totale = totale * 0.7;
-  console.log('sconto applicato');
+  //console.log('sconto applicato');
 }
-console.log('totale da pagare', totale);
+//console.log('totale da pagare', totale);
 
-if(totale > 100){
-  totale = totale;
-  console.log(totale);
-}
 
 if(totale <= 100){
   totale = totale + shippingCost;
-  console.log(totale);
+  
 }
+console.log('prezzo totale e spedizione', totale);
